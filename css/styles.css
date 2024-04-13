@@ -1,0 +1,885 @@
+/* This is the desktop view */
+/* This is the header for index */
+.header-index {
+    height: 700px;
+    display: grid;
+    grid-row: 1 / span 2;
+    grid-template-columns: 150px 200px auto 200px 150px;
+    grid-template-rows: 1fr 1fr;
+    background-color: #310c0c70; /* Black background color */
+    position: relative; /* Positioning context for the pseudo-element */
+}
+
+.header-index::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background_image.jpg');
+    background-attachment: fixed; 
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover;
+    opacity: 0.9; /* Adjust this value to control image opacity */
+    z-index: -1; /* Positions the pseudo-element below the content */
+}
+
+.navigation-bar1 li a{
+	transition: color 0.3s ease;
+	/* 添加颜色过渡效果 */
+}
+.bar-overall li a {
+    transition: color 0.3s ease;
+	/* 添加颜色过渡效果 */
+}
+.navigation-bar1 li a:hover{
+    color: #fffd72;
+}
+.bar-overall li a:hover  {
+	color: #B05868;
+}
+.header-index  {
+	grid-row: 1;
+	grid-column: 3;
+	font-family: Arial;
+	font-size: 64px;
+	font-weight: bolder;
+	font-style: italic;
+	color: rgb(43, 43, 43);
+	justify-self: center;
+	align-self: flex-end;
+}
+
+.header-index .navigation-title {
+    grid-row: 1;
+    grid-column: 3;
+    font-family: 'Montserrat', Arial;
+    font-size: 64px;
+    font-weight: bolder;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    justify-self: center;
+    align-self: flex-end;
+}
+
+.header-index .navigation-bar1 {
+    margin-top: 50px;
+    grid-row: 2;
+    grid-column: 3;
+    font-family: Helvetica, Arial;
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    justify-self: center;
+    align-self: flex-start;
+}
+
+
+.white-nav {
+    text-decoration: none;
+    color: white;
+}
+
+.span1 {
+    font-family: Helvetica, Arial;
+    font-size: 21px;
+    font-weight: lighter;
+    color:white;
+    margin: 0 0 0 0.2cm; 
+}
+
+
+  
+/* Main Content Styling */
+.main-overall {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns on large screens */
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  /* Adjusting for medium screens */
+  @media (max-width: 800px) {
+    .main-overall {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+    }
+  }
+  
+  /* Adjusting for small screens */
+  @media (max-width: 600px) {
+    .main-overall {
+      grid-template-columns: 1fr; /* One column on small screens */
+    }
+    .img-1,
+    .img-2,
+    .p-1,
+    .p-2 {
+      grid-column: 1 / -1; /* Make sure they expand the full column */
+    }
+  }
+  
+  .img-1,
+  .img-2 {
+    width: 100%;
+    grid-column: 1 / -1;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .h2-1,
+  .h2-2 {
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+  }
+  
+  .p-4 {
+    font-size: 24px;
+    color: #000000;
+    text-align: justify;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home {
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.footer-index {
+    font-family: Helvetica, Arial;
+    font-size: 24px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    color: grey;
+    clear: both;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/* This is the overall header */
+.header-overall {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr 2.5fr 350px 1fr;
+    grid-template-rows: 1, 100px;
+}
+
+.navigation-img {
+    width: 1.5cm;
+    height: auto;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: baseline;
+    justify-self: left;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .navigation-img {
+    animation: none;
+    }
+}
+/*这是dy header*/
+.title-overall {
+    grid-column: 3 / span 2;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(160, 160, 160);
+    justify-self: left;
+    align-self: center;
+}
+
+li {
+    display: inline;
+}
+
+span {
+    font-family: Helvetica, Arial;
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(46, 46, 46);
+    margin: 0 0.125cm 0 0.125cm; 
+} 
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:visited {
+    color: rgb(160, 160, 160);
+}
+
+.current {
+    font-weight: bolder;
+}
+
+/* This is the index, gallery body */
+.main-overall2 {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    
+}
+.main-overall5 {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    padding: 20px; /* Keeps space inside the border */
+    background: linear-gradient(to right, #f9f9f9, #e9ecef); /* Soft gradient background */
+    margin: 20px; /* Space outside the border */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.main-overall5:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+    border-color: #0056b3; /* Darker border color on hover for interactivity */
+}
+.p-100 {
+    grid-row: 1;
+    grid-column: 2;
+    font-family:Arial;
+    font-size: 20px;
+    color: rgb(60, 60, 60);
+    font-weight: normal;
+    width: 70vw;
+    max-height: 175px;
+    text-align: left;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 40px;
+    
+}
+.red-text {
+    font-weight: bolder;
+    color: #B05868;
+}
+.p-101 {
+    grid-row: 1;
+    grid-column: 2;
+    font-family:Arial;
+    font-size: 20px;
+    color: rgb(60, 60, 60);
+    font-weight: normal;
+    width: 70vw;
+    max-height: 175px;
+    text-align: left;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 40px;
+    
+}
+.museum-name {
+    font-weight: bolder;
+    color: #B05868;
+}
+.p-4  {
+        grid-row: 1;
+        grid-column: 2;
+        font-family:Arial;
+        font-size: 20px;
+        color: rgb(60, 60, 60);
+        font-weight: normal;
+        width: 70vw;
+        max-height: 175px;
+        text-align: left;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 40px;
+        
+    }
+    .red-text {
+        font-weight: bolder;
+        color: #B05868;
+    }
+
+.gallery {
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.img-4 {
+    width: 35vw;
+    height:25vw ;
+    border: 0px ; 
+    border-radius: 12px;
+    padding: 0vw;
+    margin: 28px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
+    transition: opacity 0.5s ease;
+    object-fit: cover; 
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    color: white;
+    border-radius: 12px; /* Match the image border radius */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Smooth transition for the text appearance */
+  }
+  
+  .image-container:hover .img-4 {
+    opacity: 0.3; /* Dim the image on hover */
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1; /* Show the overlay text on hover */
+  }
+.img-100 {
+    width: 35vw;
+    height: 40vw;
+    border: 0px ; 
+    border-radius: 12px;
+    padding: 0vw;
+    margin: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
+    object-fit: cover; 
+}
+
+
+.caption1 {
+    font-family: Helvetica, Arial;
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+    font-weight: bolder;
+    text-align: center;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.main-overall10 {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    
+}
+
+.p-101  {
+        grid-row: 1;
+        grid-column: 2;
+        font-family:Arial;
+        font-size: 20px;
+        color: rgb(60, 60, 60);
+        font-weight: normal;
+        width: 70vw;
+        max-height: 175px;
+        text-align: left;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 40px;
+        
+    }
+    .red-text {
+        font-weight: bolder;
+        color: #B05868;
+    }
+
+.gallery10 {
+    grid-row: 2;
+    grid-column: 2;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    
+}
+.h2-4 a {
+    color: #007bff; 
+    text-decoration: none; 
+    transition: all 0.3s ease; 
+}
+
+
+.h2-4 a:hover,
+.h2-4 a:focus {
+    color: #0056b3; 
+    text-decoration: underline; 
+    cursor: pointer;
+}
+
+
+.h2-4 h2 {
+    margin: 10px 0; 
+    font-size: 1.25rem; 
+}
+
+
+.h2-4:hover {
+    background-color: #f0f8ff; 
+    border-radius: 5px; 
+    padding: 5px; 
+}
+
+
+
+/* This is the about body */
+.about-form {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.about-form label {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px; 
+    color: rgb(43, 43, 43);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+/* Added styles for input fields for consistency */
+.about-form input[type="text"], 
+.about-form input[type="email"] {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    width: calc(100% - 22px); 
+}
+
+.form-submit {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(47, 0, 177);
+    padding: 12px 25px; 
+    border: none; 
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.form-submit:hover {
+    background-color: rgb(65, 0, 255); 
+}
+
+
+/* This is the photo page body */
+
+.header1 {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: auto;
+    grid-row-gap: 50px;
+    justify-content: center;
+    align-content: center;
+}
+
+.header1 .h1 {
+    text-align: center;
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: bolder;
+    color: rgb(43, 43, 43);
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+}
+
+.header1 .navigation-bar-2 {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    margin: 0; 
+}
+
+.navigation-bar-2 li {
+    margin: 0 ; 
+}
+
+.navigation-bar-2 a {
+    font-family: 'Arial', sans-serif;
+    color: #7a7a7a;  
+    font-size: 1rem; 
+    padding: 10px 10px; 
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; 
+    border-radius: 5px; 
+}
+
+.navigation-bar-2 a:hover, .navigation-bar-2 a:focus {
+    color: #1e1e1e; 
+    background-color: #c2dfff; 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.main-overall4 {
+    margin-top: 100px;
+    display: grid;
+    grid-column: 0.5fr 1fr 0.5fr;
+    grid-row: auto;
+    grid-row-gap: 30px;
+    align-content: center;
+    justify-content: center;
+}
+
+.img-10 {
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+    width: 35vw;
+    height: 40vw;
+    border: 0px ; 
+    border-radius: 12px;
+    padding: 0vw;
+    margin: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
+    object-fit: cover; 
+}
+
+.caption1 {
+    grid-column: 2;
+    text-align: center;
+}
+.project-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%; /* Adjust to suit your layout */
+    margin: 2em auto; /* Centering in the viewport */
+    padding: 1em;
+    background: #f8f8f8; /* A light background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.project-link {
+    text-decoration: none;
+    font-size: 1.5em; /* Slightly larger font size */
+    color: #5a5a5a; /* A neutral, readable color */
+    font-weight: 500; /* Medium font weight */
+    padding: 0.5em 1em; /* Padding for clickable area */
+    border-radius: 10px; /* Rounded corners for the links */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.project-link:hover, .project-link:focus {
+    color: #ffffff; /* Bright color for contrast */
+    background-color:rgb(47, 0, 177); /* A pleasant interactive color */
+    text-decoration: none; /* No underline on hover, clean look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow for lifted effect */
+}
+
+/* Optional: Adjust link appearance when not focusable */
+.project-link:not(:focus) {
+    outline: none; /* Removes outline when not focused for a clean look */
+}
+
+#back-to-top {
+    font-weight: bolder;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(47, 0, 177); /* Background color */
+    color: white; /* Icon color */
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px; /* Icon size if using a font icon */
+}
+
+#back-to-top:hover {
+    background-color:rgb(65, 0, 255); /* Slightly darker on hover */
+}
+.filter-container {
+    margin: 20px;
+    margin-left: auto; /* Align to the right */
+    width: 300px; /* Fixed width, adjust as needed */
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+.filter-container label {
+    display: block;
+    margin-bottom: .5em;
+    color: #333;
+    font-size: 1rem;
+}
+
+.filter-container select {
+    width: 100%;
+    padding: .75em 1em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease; /* Smooth transitions for all properties */
+    appearance: none; /* Removes default system dropdown styling */
+}
+
+/* Custom dropdown arrow */
+.filter-container::after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #333;
+    transition: color 0.3s; /* Smooth transition for the arrow color */
+}
+
+/* Hover state styles for select */
+.filter-container select:hover,
+.filter-container select:focus {
+    border-color: #007bff; /* Change border color on hover/focus */
+    box-shadow: 0 2px 6px rgba(0, 123, 255, 0.2); /* Soft shadow for depth */
+}
+
+/* Keeping the focus style consistent with hover */
+.filter-container select:focus {
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
+}
+
+/* Changing the arrow color on hover/focus of select */
+.filter-container select:hover::after,
+.filter-container select:focus::after {
+    color: #007bff;
+}
+
+/* Optional: Adjust the transition effect for the label as well */
+.filter-container label {
+    transition: color 0.3s;
+}
+
+.filter-container select:focus + label {
+    color: #007bff; /* Change label color when select is focused */
+}
+
+
+/* This is the tablet view */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+.header-index {
+        height: 500px;
+        grid-template-columns: 100px 1fr 100px;
+        grid-template-rows: auto;
+        background-color: #310c0c70;
+    }
+
+    .header-index::before {
+        opacity: 0.8; /* Slightly increase opacity for better readability */
+    }
+
+    .header-index .navigation-bar1,
+    .header-index .bar-overall {
+        grid-row: 2;
+        grid-column: 2;
+        font-size: 18px; /* Slightly reduce font size for space */
+    }
+
+    .header-index .navigation-title {
+        font-size: 48px; /* Adjust font size for title */
+    }
+
+    /* Main Content Styling Adjustments */
+    .main-overall {
+        grid-template-columns: repeat(2, 1fr); /* Adjust to two columns */
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .img-1, .img-2 {
+        margin: 15px 0; /* Adjust margins for images */
+    }
+
+    .p-4 {
+        font-size: 18px; /* Adjust font size for paragraphs */
+        padding: 15px; /* Adjust padding for content boxes */
+    }
+
+    /* Adjusting navigation and footer sections */
+    .navigation-img {
+        width: 1.2cm; /* Adjust logo size */
+    }
+
+    .title-overall {
+        font-size: 32px; /* Adjust title font size */
+    }
+
+    .bar-overall li a,
+    .navigation-bar1 li a {
+        font-size: 18px; /* Adjust link font size */
+    }
+
+    .footer-index {
+        font-size: 20px; /* Adjust footer font size */
+    }
+
+    /* Adjustments for additional sections */
+    .about-form input[type="text"], 
+    .about-form input[type="email"] {
+        font-size: 16px; /* Adjust input field font size */
+    }
+
+    .form-submit {
+        font-size: 16px; /* Adjust submit button font size */
+    }
+
+    .img-10, .img-100 {
+        width: 45vw; /* Adjust image width */
+        height: auto; /* Adjust height to maintain aspect ratio */
+    }
+
+    .caption1 {
+        font-size: 14px; /* Adjust caption font size */
+    }
+
+    .gallery, .gallery10 {
+        flex-direction: row; /* Adjust gallery layout */
+        gap: 15px; /* Adjust gap between items */
+    }
+
+    .img-4 {
+        width: 45vw; /* Adjust image width for gallery */
+        height: 30vw; /* Adjust height accordingly */
+    }
+
+    .filter-container {
+        width: 250px; /* Adjust filter container width */
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+.header-index {
+        height: 400px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        background-color: #310c0c70;
+    }
+
+    .header-index::before {
+        opacity: 0.7;
+    }
+
+    .header-index .navigation-bar1,
+    .header-index .bar-overall {
+        grid-row: 2;
+        grid-column: 1;
+        font-size: 16px; /* Reduce font size for space */
+        text-align: center; /* Center align for better readability */
+    }
+
+    .header-index .navigation-title {
+        font-size: 36px; /* Reduce title font size */
+    }
+
+    /* Main Content Styling Adjustments for mobile */
+    .main-overall {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .img-1, .img-2, .img-4, .img-100 {
+        width: 90vw; /* Adjust images to fit single column */
+        margin: 10px 0; /* Adjust margins for tighter spacing */
+        height: auto; /* Adjust height to maintain aspect ratio */
+    }
+
+    .p-4 {
+        font-size: 16px; /* Adjust font size for readability */
+        padding: 15px; /* Adjust padding for content boxes */
+    }
+
+    /* Navigation and Footer section adjustments */
+    .navigation-img {
+        width: 1cm; /* Adjust logo size */
+    }
+
+    .title-overall {
+        font-size: 24px; /* Adjust title font size for readability */
+    }
+
+    .bar-overall li a,
+    .navigation-bar1 li a {
+        font-size: 16px; /* Adjust link font size for readability */
+    }
+
+    .footer-index {
+        font-size: 18px; /* Adjust footer font size for consistency */
+    }
+
+    /* Adjustments for form elements and buttons */
+    .about-form input[type="text"], 
+    .about-form input[type="email"] {
+        font-size: 14px; /* Adjust input field font size */
+    }
+
+    .form-submit {
+        font-size: 14px; /* Adjust submit button font size */
+    }
+
+    /* Gallery and caption adjustments */
+    .gallery, .gallery10 {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .caption1 {
+        font-size: 12px; /* Adjust caption font size for space */
+    }
+
+    /* Filter container adjustments for mobile */
+    .filter-container {
+        width: 100%; /* Full width to utilize available space */
+        margin: 10px 0; /* Adjust margin for spacing */
+    }
+}

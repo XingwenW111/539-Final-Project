@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- All of the meta data for the page belongs in the header tag -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/caa942fe7a.js" crossorigin="anonymous"></script>
+	<title>GALLERY</title>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HLX0GKLKKJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HLX0GKLKKJ');
+</script>
+
+<body>
+    <header class="header-overall">
+        <img class="navigation-img" src="images/favicon.ico" alt="logo">
+        <h1 class="title-overall" >Museums Gallery</h1>
+        <ul class="bar-overall">
+            <li><a href="index.html">HOME<span>|</span></a></li>
+            <li class="current"><a href="gallery.html" class="current">GALLERY<span>|</span></a></li>
+            <li><a href="project.html">BEST COLLECTIONS<span>|</span></a></li>
+        </ul>
+    </header>
+    <div class="filter-container">
+        <label for="filter">Filter</label>
+        <select id="filter" name="filter">
+            <option value="all">All</option>
+            <option value="NM">Nature Museums</option>
+            <option value="AM">Art Museums</option>
+            <option value="HM">History Museums</option>
+            <option value="Others">Others</option>
+        </select>
+    </div>
+    <main class="main-overall2">
+
+        <p class="p-4">
+            Welcome to the gallery showcasing the diverse array of museums I have visited. Each image captures a moment from my journey through these halls of history, art, and science, offering a glimpse into the rich tapestry of cultural heritage and innovation they represent. <span class="red-text">Hover over any image to delve deeper into the details of each exhibit, uncovering stories and insights that have shaped my understanding of the world.</span> This collection is more than just a record of places visited; it's an invitation to explore the depth and breadth of human creativity and knowledge.
+        </p>
+        
+
+        <figure class="gallery">
+            <!-- Art Museums -->
+            <img src="images/d0f3d900862a65a45f9ab27c8111064.jpg" alt="SD Art Museum" data-category="AM" class="img-4">
+            <img src="images/29de1fb698d3f1bb8ca233ce81326ba.jpg" alt="getty" data-category="AM" class="img-4">
+        
+            <!-- History Museums -->
+            <img src="images/a75756467b220635fd4e15ba9cfe0f8.jpg" alt="SD midway" data-category="HM" class="img-4">
+            <img src="images/de833590b3b7b9a8416f66e0ec25ee4.jpg" alt="LA History" data-category="HM" class="img-4">
+        
+            <!-- Nature Museums -->
+            <img src="images/d84bdacd585a7fd080cacc4f0e05972.jpg" alt="DC Natural Museum" data-category="NM" class="img-4">
+            <img src="images/e183052578ddd794a49aecac3e6dce6.jpg" alt="MIA Natural" data-category="NM" class="img-4">
+        
+            <!-- Others -->
+            <img src="images/baaa14f6d1b1ae015d5eb1efbbe11a3.jpg" alt="Stranger Things" data-category="Others" class="img-4">
+            <img src="images/84c64c136859b1209a17e588f82b971.jpg" alt="SD Mob Museum" data-category="Others" class="img-4">
+        </figure>
+        
+
+    
+    </main>
+
+    <footer class="footer-index">
+        &copy; 2024 Amber Wang <span>    </span><i class="fa-solid fa-camera" style="font-size:12px;color: darkgray;"></i>
+        <a href="javascript:void(0);" id="back-to-top" title="Back to top" style="display: none;">
+            Back to Top
+        </a>
+   
+    </footer>
+
+
+</body>
+</html>
+<script src="gallery.js"></script>
