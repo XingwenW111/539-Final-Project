@@ -82,7 +82,7 @@ function form_input_func() {
         var message = document.getElementById("message").value;
         var form_button = document.getElementById("form_button");
         if (email != "" && message != "") {
-            form_button.style.backgroundColor = "coral";
+            form_button.style.backgroundColor = "#B05868";
         }
         else {
             form_button.style.backgroundColor = "";

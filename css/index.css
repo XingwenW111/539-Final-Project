@@ -1,0 +1,6 @@
+a:visited{
+    color: white !important;
+}
+a:visited:hover {
+    color: #fffd72 !important; 
+}

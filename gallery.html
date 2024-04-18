@@ -32,43 +32,93 @@
             <li><a href="project.html">BEST COLLECTIONS<span>|</span></a></li>
         </ul>
     </header>
-    <div class="filter-container">
-        <label for="filter">Filter</label>
-        <select id="filter" name="filter">
-            <option value="all">All</option>
-            <option value="NM">Nature Museums</option>
-            <option value="AM">Art Museums</option>
-            <option value="HM">History Museums</option>
-            <option value="Others">Others</option>
-        </select>
+    <div class="filter-container-div">
+        <div class="filter-container">
+            <label for="filter">Filter</label>
+            <select id="filter" name="filter">
+                <option value="all">All</option>
+                <option value="NM">Nature Museums</option>
+                <option value="AM">Art Museums</option>
+                <option value="HM">History Museums</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
     </div>
+
     <main class="main-overall2">
 
         <p class="p-4">
             Welcome to the gallery showcasing the diverse array of museums I have visited. Each image captures a moment from my journey through these halls of history, art, and science, offering a glimpse into the rich tapestry of cultural heritage and innovation they represent. <span class="red-text">Hover over any image to delve deeper into the details of each exhibit, uncovering stories and insights that have shaped my understanding of the world.</span> This collection is more than just a record of places visited; it's an invitation to explore the depth and breadth of human creativity and knowledge.
         </p>
-        
+
 
         <figure class="gallery">
             <!-- Art Museums -->
-            <img src="images/d0f3d900862a65a45f9ab27c8111064.jpg" alt="SD Art Museum" data-category="AM" class="img-4">
-            <img src="images/29de1fb698d3f1bb8ca233ce81326ba.jpg" alt="getty" data-category="AM" class="img-4">
-        
+            <div class="gallery-item">
+                <img src="images/d0f3d900862a65a45f9ab27c8111064.jpg" alt="SD Art Museum" data-category="AM" class="img-4">
+                <div class="overlay">
+                    <h3>San Diego Art Museum</h3>
+                    <p>I went to the San Diego Art Museum in August 2023 and was captivated by its diverse collection of artworks spanning various genres and periods. From classical masterpieces to contemporary installations, the museum offered a rich tapestry of artistic expression. The exhibits were thoughtfully curated, providing insight into both local and global artistic movements. Navigating through the museum's halls was a journey through history and culture, leaving me inspired and enriched by the experience.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/29de1fb698d3f1bb8ca233ce81326ba.jpg" alt="getty" data-category="AM" class="img-4">
+                <div class="overlay">
+                    <h3>Getty Center</h3>
+                    <p>I went to Getty Center in May 2018, and the experience was truly captivating. Nestled amidst the hills of Los Angeles, the Getty Center boasts breathtaking architecture and stunning gardens. Exploring its renowned art collections, including masterpieces by Van Gogh and Monet, was an enriching journey through history and culture. The panoramic views of the city from the center's terraces added an extra layer of beauty to an unforgettable visit.</p>
+                </div>
+            </div>
             <!-- History Museums -->
-            <img src="images/a75756467b220635fd4e15ba9cfe0f8.jpg" alt="SD midway" data-category="HM" class="img-4">
-            <img src="images/de833590b3b7b9a8416f66e0ec25ee4.jpg" alt="LA History" data-category="HM" class="img-4">
-        
+            <div class="gallery-item">
+                <img src="images/a75756467b220635fd4e15ba9cfe0f8.jpg" alt="SD midway" data-category="HM" class="img-4">
+                <div class="overlay">
+                    <h3>San Diego Midway Museum</h3>
+                    <p>I went to the San Diego Midway Museum in December 2013, eager to explore its rich maritime history. Docked in downtown San Diego, the museum offers a captivating journey aboard the USS Midway, a retired aircraft carrier turned museum. As I stepped aboard the massive vessel, I was immersed in the stories of its service during World War II, the Cold War, and Operation Desert Storm. From the sprawling flight deck to the cramped crew quarters, every corner of the USS Midway revealed the bravery and dedication of those who served aboard her.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/de833590b3b7b9a8416f66e0ec25ee4.jpg" alt="LA History" data-category="HM" class="img-4">
+                <div class="overlay">
+                    <h3>Natural History Museum of LA</h3>
+                    <p>I went to the Natural History Museum of LA in Dec. 2020 and was immediately captivated by its vast collection spanning millions of years of natural history. From towering dinosaur skeletons to intricate exhibits on biodiversity, the museum offered a fascinating journey through Earth's evolutionary past. The interactive displays and immersive experiences made learning about topics like paleontology and ecology engaging for visitors of all ages. It was a memorable exploration of our planet's rich and diverse heritage.</p>
+                </div>
+            </div>
             <!-- Nature Museums -->
-            <img src="images/d84bdacd585a7fd080cacc4f0e05972.jpg" alt="DC Natural Museum" data-category="NM" class="img-4">
-            <img src="images/e183052578ddd794a49aecac3e6dce6.jpg" alt="MIA Natural" data-category="NM" class="img-4">
-        
+            <div class="gallery-item">
+                <img src="images/d84bdacd585a7fd080cacc4f0e05972.jpg" alt="DC Natural Museum" data-category="NM" class="img-4">
+                <div class="overlay">
+                    <h3>Nation Museum of Natural History</h3>
+                    <p>I went to the National Museum of Natural History in December 2020 and was captivated by its extensive exhibits showcasing the wonders of the natural world. From towering dinosaur skeletons to intricate mineral collections, the museum offered a fascinating journey through Earth's history and biodiversity. The interactive displays and informative presentations made learning about topics like evolution and ecology engaging and accessible to visitors of all ages. It was a memorable experience that left me in awe of the beauty and complexity of our planet's natural wonders.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/e183052578ddd794a49aecac3e6dce6.jpg" alt="MIA Natural" data-category="NM" class="img-4">
+                <div class="overlay">
+                    <h3>Miami Frost Museum of Science</h3>
+                    <p>I went to the Miami Frost Museum of Science in February 2024, and it was a captivating experience. Exploring its interactive exhibits and immersive displays provided a fascinating journey through various scientific disciplines. From the mesmerizing planetarium shows to the hands-on experiments, the museum offered an engaging environment for both learning and enjoyment. The innovative approach to science education at the Frost Museum left a lasting impression, making it a must-visit destination for anyone with a curiosity about the world around us.</p>
+                </div>
+            </div>
             <!-- Others -->
-            <img src="images/baaa14f6d1b1ae015d5eb1efbbe11a3.jpg" alt="Stranger Things" data-category="Others" class="img-4">
-            <img src="images/84c64c136859b1209a17e588f82b971.jpg" alt="SD Mob Museum" data-category="Others" class="img-4">
-        </figure>
-        
+            <div class="gallery-item">
+                <img src="images/baaa14f6d1b1ae015d5eb1efbbe11a3.jpg" alt="Stranger Things" data-category="Others" class="img-4">
 
-    
+                <div class="overlay">
+                    <h3>Stranger Things Theme Museum</h3>
+                    <p>I went to the Stranger Things Theme Museum in January 2024; situated in Las Vegas, it's a captivating homage to the popular TV show, Stranger Things. Upon entering, visitors are immersed in the nostalgic ambiance of the 1980s, reminiscent of the show's setting. The museum showcases iconic props, detailed replicas of sets, and interactive exhibits, offering fans a chance to delve deeper into the supernatural world of Hawkins, Indiana. It's a must-visit destination for enthusiasts seeking to relive the magic of the Upside Down.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/84c64c136859b1209a17e588f82b971.jpg" alt="SD Mob Museum" data-category="Others" class="img-4">
+                <div class="overlay">
+                    <h3>Las Vegas Mob Museum</h3>
+                    <p>I went to the Las Vegas Mob Museum in January 2024, and it offered a captivating journey into the city's infamous mob history. The museum's exhibits vividly portrayed the rise and fall of organized crime in Las Vegas, showcasing artifacts, interactive displays, and multimedia presentations. Exploring the museum provided a deep insight into the fascinating yet turbulent past of this iconic American city, leaving a lasting impression on visitors.</p>
+                </div>
+            </div>
+        </figure>
+
+
+
+
     </main>
 
     <footer class="footer-index">
